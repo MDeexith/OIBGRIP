@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --font-style: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--font-style);
+    background-color: #1C2A44;
+}
+
+.navbar{
+    background-color: #00FFFF;
+    border-radius: 60px;
+    margin-left: 50px;
+    /* box-shadow: 0 4px 8px 0 #00b2ff, 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.navbar ul{
+    overflow: auto;
+    
+}
+.logo{
+    float: left;
+    width: 50px;
+    border-radius: 40px;
+    margin: 0px 35px;
+    cursor: pointer;
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    color: black;
+    margin: 15px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(245, 50, 1);
+    transition: width .3s;
+}
+.navbar li:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.image1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.content{
+    width: auto;
+    margin: auto;
+    height: auto;
+    color: #fff;
+    position: relative;
+    margin-left: 50px;
+}
+.content .p1{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+.content h1{
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Segoe UI';
+}
+.content .button{
+    width: 160px;
+    height: 40px;
+    background-color: #00FFFF;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: #00b2ff;
+    transition: 0.3s;
+    color: rgb(245, 50, 1);
+}
+
+.image2{
+    position: absolute;
+    top: -20px;
+    left: 700px;
+}
+.navbar .sign{
+    float: right;
+    margin-right: 100px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sign .button{
+    width: 100px;
+    background-color: #00FFFF;
+    border: none;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.search{
+    float: left;
+    margin-left: 555px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.input{
+    background: transparent;
+    height: 20px;
+    border: 1px solid #00b2ff;
+    border-top: 2px solid #00b2ff;
+    color: rgb(0, 0, 0);
+    border-right: none;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.search .button{
+    width: 40px;
+    height: 25px;
+    border: 2px solid #00b2ff;
+    background-color: #00b2ff;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.search .button:focus{
+    outline: none;
+}
+.input:focus{
+    outline: none;
+}
+.footer ul{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    display: flex;
+}
+.footer ul li{
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.footer ul li a{
+    display: block;
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 6px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+.footer ul li:nth-child(1) a:hover .ri-instagram-fill {
+    color: #940e46;
+}
+
+.footer ul li:nth-child(2) a:hover .ri-facebook-circle-fill {
+    color: #372bdb;
+}
+
+.footer ul li:nth-child(3) a:hover .ri-twitter-fill {
+    color: #00aced;
+}
+
+.footer ul li:nth-child(4) a:hover .ri-linkedin-box-fill {
+    color: #024dad;
+}
