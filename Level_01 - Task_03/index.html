@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav_div">
+            <a class="nav_logo">Temperature Converter</a>
+        </div>
+    </nav>
+    <section>
+        <svg class="image1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,256L24,224C48,192,96,128,144,133.3C192,139,240,213,288,208C336,203,384,117,432,69.3C480,21,528,11,576,53.3C624,96,672,192,720,218.7C768,245,816,203,864,192C912,181,960,203,1008,181.3C1056,160,1104,96,1152,74.7C1200,53,1248,75,1296,90.7C1344,107,1392,117,1416,122.7L1440,128L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    </section>
+    <div class="container">
+        <form class="row" onsubmit="tempconv(); return false">
+            <div class="temp-in">
+                <label class="form-label">Entered Temperature Unit: </label>
+                <select name="unit-ip" id="unit-ip" class="form-control">
+                    <option value="C">Celsius °C</option>
+                    <option value="K">Kelvin °K</option>
+                    <option value="F">Fahrenheit °F</option>
+                </select>
+            </div>
+            <div class="in">
+                <input type="text" name="temp" id="temp" class="inp" placeholder="Enter Temperature">
+            </div>
+            <div class="but">
+                <button class="btn" id="btn" type="submit">Convert</button>
+            </div>
+        </form>
+        <div class="res">
+            <h1 id="result"></h1>
+            <h4 id="result1"></h4>
+            <h4 id="result2"></h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
